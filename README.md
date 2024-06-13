@@ -91,7 +91,7 @@
 ```
 Visibility="Collapsed" 
 ``` 
-# **- только Collapsed вместо Hidden. С помощью кнопки меняем свойство. Ниже код**
+# **>только Collapsed вместо Hidden. С помощью кнопки меняем свойство. Ниже код**
 
 ```
        private void btn_show_students_Click(object sender, RoutedEventArgs e)
