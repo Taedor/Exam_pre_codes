@@ -1,6 +1,6 @@
 # Exam_pre_codes
 
-
+>https://github.com/AsmodeyLostHaven/Teoretica_wpf.git
 ## Способ как не создавать ненужные лишние окна:
 
 код Window XAMl
