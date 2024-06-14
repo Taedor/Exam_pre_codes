@@ -111,7 +111,7 @@ Visibility="Collapsed"
 - как можно было замететь, то у меня несколько SP (StackPanel), и тут я проверяю НЕ видны ли они. Вот так легко меняется свойство.
 
 # Но если уж так сильно любите окна, то вот код перемещения. Уникален для всех ОКОН
-```charp
+```C#
 MenuScreen dashboard = new MenuScreen(); - где MenuScreen название Окна.
 dashboard.Show();
 this.Close();
