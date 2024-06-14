@@ -4,7 +4,7 @@
 ## Способ как не создавать ненужные лишние окна:
 
 код Window XAMl
-```
+```XAML
 <Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
@@ -83,17 +83,17 @@
 ```
 ## ОБЪЯСНЕНИЕ
 
-```
+```XAML
 <Separator> - некий пробел между элементами. Настройка через Margin = " ".
 И да, не забывайте в нем подгонять Background под фон того, на чем оно. Грид или StackPanel. По дефолту Separator имеет Белый цвет.
 ```
 # **Как можно было замететь, я использую несколько "StackPanel". Это не запрещено и как раз выход для НЕ создания множества окон.**
-```
+```XAML
 Visibility="Collapsed" 
 ``` 
 # **только Collapsed вместо Hidden. С помощью кнопки меняем свойство. Ниже код**
 
-```
+```csharp
        private void btn_show_students_Click(object sender, RoutedEventArgs e)
        {
            if (SP_Students.Visibility == Visibility.Collapsed & SP_Grades.Visibility != Visibility.Visible & SP_Exams.Visibility != Visibility.Visible)
@@ -111,15 +111,15 @@ Visibility="Collapsed"
 - как можно было замететь, то у меня несколько SP (StackPanel), и тут я проверяю НЕ видны ли они. Вот так легко меняется свойство.
 
 # Но если уж так сильно любите окна, то вот код перемещения. Уникален для всех ОКОН
-```
+```charp
 MenuScreen dashboard = new MenuScreen(); - где MenuScreen название Окна.
 dashboard.Show();
 this.Close();
 ```
 
 ## *Мой код (ГПТ) Логирования* 
-```
-    SqlConnection sqlCon = new SqlConnection(@"Data Source=ИМЯ_СЕРВЕРА;Initial Catalog=ИМЯ_БАЗЫ;Integrated Security=True;Trust Server Certificate=True");
+```C#
+SqlConnection sqlCon = new SqlConnection(@"Data Source=ИМЯ_СЕРВЕРА;Initial Catalog=ИМЯ_БАЗЫ;Integrated Security=True;Trust Server Certificate=True");
     try
     {
         if (sqlCon.State == ConnectionState.Closed)
